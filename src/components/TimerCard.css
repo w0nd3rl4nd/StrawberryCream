@@ -1,0 +1,26 @@
+#timercard {
+    display: flex;
+    /* align-self: stretch; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5vw;
+
+    #notebookSide {
+        width: 12%;
+        height: 100%;
+        align-self: flex-start;
+        border-radius: 50px 0 0 50px;
+    }
+    
+    .button {
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 0px;
+        cursor: pointer;
+    }
+
+    .buttonRow {
+    }
+
+}

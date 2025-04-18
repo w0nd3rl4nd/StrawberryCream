@@ -3,13 +3,12 @@ import './Button.css'
 
 export interface ButtonProps {
     text: string;
-    size: number;
 }
 
-export function Button({properties}: {properties: ButtonProps}) {
+export function Button(properties: ButtonProps) {
     return (
         <>
-            <button style={{width: properties.size}}>{properties.text}</button>
+            <button className='button'>{properties.text}</button>
         </>
     );
 }

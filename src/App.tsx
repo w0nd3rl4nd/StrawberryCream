@@ -1,18 +1,16 @@
 import './App.css'
-import {Button, ButtonProps} from './components/Button'
-
+import { TimerCard } from './components/TimerCard'
 
 function App() {
 
-  const buttonProps: ButtonProps = {
-    text: "Hello Button!",
-    size: 100,
-  };
-
   return (
     <>
-      <p>StrawberryCream</p>
-      <Button properties={buttonProps}/>
+      <div id="container">
+        <TimerCard 
+          backgroundcolor='rgba(246, 169, 189, 0.9)'
+          backgroundside='rgba(255, 224, 248, 1)'
+        />
+      </div>
     </>
   )
 }
