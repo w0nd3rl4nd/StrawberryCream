@@ -1,14 +1,14 @@
 import React from 'react';
+import './DateTimeDisplay.css';
 
 interface DateTimeDisplayProps {
   value: any;
   type: any;
-  isDanger: any;
 }
 
-const DateTimeDisplay: React.FC<DateTimeDisplayProps> = ({ value, type, isDanger }) => {
+const DateTimeDisplay: React.FC<DateTimeDisplayProps> = ({ value, type }) => {
   return (
-    <div className={isDanger ? 'countdown danger' : 'countdown'}>
+    <div className='count'>
       <p>{value}</p>
       <span>{type}</span>
     </div>

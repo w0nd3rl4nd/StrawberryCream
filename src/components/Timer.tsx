@@ -10,7 +10,10 @@ export function Timer() {
 
     return (
         <div id="timer">
+            <p>Current session</p>
             <CountdownTimer targetDate={new Date(dateTimeAfterOneHour)} />
+
+            
         </div>
     )
 }

@@ -15,10 +15,14 @@
 
     .show-counter {
         background-color: aquamarine;
-        display: inline-block;
-        DateTimeDisplay {
-            display: inline-block;
-        }
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .show-counter p {
+            margin: 0;
+            font-size: 24px;
+          }
     }
 }
 
