@@ -24,14 +24,18 @@ interface CountdownTimerProps {
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-    return (
-      <ShowCounter
-          days = {days}
-          hours = {hours}
-          minutes = {minutes}
-          seconds = {seconds}
-      />
-  );
+    if (days + hours + minutes + seconds <= 0) {
+      return <p>Timer has ended!</p>
+  } else {
+      return (
+          <ShowCounter
+              days = {days}
+              hours = {hours}
+              minutes = {minutes}
+              seconds = {seconds}
+          />
+      );
+  }
 };
 
 export default CountdownTimer;
