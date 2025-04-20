@@ -1,0 +1,16 @@
+#timer {
+    display: flex;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    align-items: start;
+    justify-content: start;
+    margin-right: 5vw;
+    padding: 20px;
+
+    p {
+        font-size: large;
+    }
+}
+

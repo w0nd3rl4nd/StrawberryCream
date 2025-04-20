@@ -12,7 +12,7 @@
     background-image: url('testWallpaper.jpeg');
     align-items: center;
     background-size:cover;
-    justify-content: start;
+    justify-content: space-between;
 
     #timercard {
         width: 40vw;
@@ -20,5 +20,11 @@
         max-width: 40vw;
         height: 600px;
         border-radius: 50px;
+    }
+
+    #timer {
+        width: 30vw;
+        height: 30vh;
+        
     }
 }
