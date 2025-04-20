@@ -1,5 +1,5 @@
 #timer {
-    display: flex;
+    /* display: flex; */
     background-color: white;
     border: 1px;
     border-style: solid;
@@ -11,6 +11,14 @@
 
     p {
         font-size: large;
+    }
+
+    .show-counter {
+        background-color: aquamarine;
+        display: inline-block;
+        DateTimeDisplay {
+            display: inline-block;
+        }
     }
 }
 
